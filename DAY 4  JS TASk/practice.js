@@ -71,7 +71,6 @@
 // }
 // else {
 //     console.log("Some numbers are equal");
-    
 // }
 
 // Ek student ka percentage input lo aur grading system banao:

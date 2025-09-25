@@ -65,8 +65,8 @@
 //     if(user==="rock" && computer==="sceicer") return "user";
 //     if(user==="scicer" && computer==="rock") return "computer";
 //     if(user==="paper" && computer==="rock") return "user";
-//     if(user==="rock" && computer==="paper")  return "computer"
-//     if(user==="paper" && computer==="scicer") return "computer"
-//     if(user==="sceicer" && computer==="paper") return "user"
+//     if(user==="rock" && computer==="paper")  return "computer";
+//     if(user==="paper" && computer==="scicer") return "computer";
+//     if(user==="sceicer" && computer==="paper") return "user";
 // } 
 // console.log(rps("paper","rock"))

@@ -45,7 +45,7 @@
 
 // Print the first 10 odd numbers
 // for(let i=1;i<=20;i++){
-//         console.log(2*1-1);
+//         console.log(2*i-1);
 // }
 
 // Find the sum of numbers from 1 to N (N given by user)
@@ -62,7 +62,7 @@
 //using for loop
 // let n=20;
 // let sum=0;
-// for(let i=1;i<=20;i++){
+// for(let i=1;i<=n;i++){
 //     sum+=i;
 // }
 //     console.log(sum);
@@ -74,7 +74,7 @@
 // for(let i=1;i<=n;i++){
 //     fact*=i
 // }
-// console,log(fact)
+// console.log(fact)
 
 // Print the multiplication table of a given number
 // for(i=1;i<=10;i++){
@@ -98,14 +98,57 @@
 // 🌿 Intermediate Level (Logic Building)
 
 // Reverse a number (123 → 321)
+// let num=123;
+// let str=num.toString()
+// let rev=""
+// for(let i=str.length-1;i>=0;i){
+//     rev +=str[i]
+// } 
+// console.log(Number(rev))
+
+
 
 // Count the number of digits in a given number
+// let num=11233334;
+// let str=num.toString()
+// let Count=0;
+// for(let i=0;i<str.length;i++){
+//     Count++;
+// }
+// console.log(Count)
 
-// Find the sum of digits of a number (123 → 6)
+// Find the sum of digits of a number (33 → 6)
+// let num=33;
+// let str=num.toString()
+// let sum=0;
+// for(let i=0;i<str.length;i++){
+//     sum +=Number(str[i])
+// }
+// console.log(sum);
+
 
 // Check if a number is palindrome
+// let num=121;
+// let str=num.toString()
+// let rev=""
+// for(let i=str.length-1;i>=0;i++){
+//     rev +=str[i]
+//     if(str===rev){
+//         console.log("palindrome");
+//     }
+//     else{
+//         console.log("not a palindrome");
+//     }
+// }
+
 
 // Print all numbers between 1–100 divisible by 3 and 5
+// let n=100;
+// for(let i=1;i<=n;i++){
+//     if(i%3===0 && i%5===0){
+//         console.log(i);
+//     }
+// }
 
 // Print the Fibonacci series up to N terms
 
@@ -134,6 +177,13 @@
 // ***
 // ****
 // *****
+// for(let i=1;i<=5;i++){
+//     let str=""
+//     for(let j=1;j<=i;j++){
+//        str+="*"
+//     }
+//     console.log("*");
+// }
 
 
 // Print a reverse triangle pattern using loops
