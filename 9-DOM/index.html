@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="h1">Hello Gagan Bhaiyaa Kaise Ho </h1>
+    <a>TAP</a>
+
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+    <div class="gagan"></div>
+
+
+    <button type="submit"
+        onclick="document.getElementById('h1').innerText='Ha Shviraj Bhai theek hu apki daya se' ">submit</button>
+    <button type="button" id="meraButton">Naya dibba banao</button>
+
+
+
+    <div id="w3box" onmousedown="mDown(this)" onmouseup="mUp(this)"
+        style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+        Click Me</div>
+
+    <script>
+        function mDown(obj) {
+            obj.style.backgroundColor = "#1ec5e5";
+            obj.innerHTML = "Release Me";
+        }
+
+        function mUp(obj) {
+            obj.style.backgroundColor = "#D94A38";
+            obj.innerHTML = "Thank You";
+        }
+    </script>
+</body>
+
+</html>
+
+
+<script src="dom.js"></script>
