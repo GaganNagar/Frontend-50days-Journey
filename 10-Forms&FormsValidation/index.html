@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS AND FORMS VALIDATIONS</title>
+    <style>
+         form{
+           /* font-size: 30px; */
+        }
+        #hide{
+        color: red;
+        display:none;
+        }
+        textarea{
+            width: 300px;
+        }
+        span{
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <input autocomplete="off" type="text" id="Name" placeholder="Enter Your Name...">
+        <br> 
+        <span id="nameError"></span>
+        <br>
+
+        <!-- <div id="hide">
+            <small>name must be greater than 3 character</small>
+            <br>
+        </div> -->
+        <select  name="" id="select">
+            <option selected  hidden value="">Select One</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+        </select>
+        <br> <br>
+
+        <textarea name="textarea" id="textarea" placeholder="enter anything...">
+        
+        </textarea>
+        <br>
+        <input type="submit" id="submit">
+    </form>
+    
+</body>
+</html>
+<script src="script.js"></script>
