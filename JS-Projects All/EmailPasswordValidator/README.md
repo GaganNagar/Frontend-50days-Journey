@@ -32,7 +32,8 @@ This project heavily utilizes core web technologies and modern JavaScript concep
 
 ***
 
-## 💡 Code Snippets
+## Getting Started
+
 
 Here are some key snippets from `NextUp.js` that showcase the project's logic.
 
