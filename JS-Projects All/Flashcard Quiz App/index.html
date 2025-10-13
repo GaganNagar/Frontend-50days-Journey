@@ -49,3 +49,56 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Pro - Quiz App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-100 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div class="app-container bg-white p-6 sm:p-8 rounded-2xl shadow-2xl flex flex-col items-center space-y-6 w-full max-w-2xl">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-800 text-center">Flashcard Pro</h1>
+
+        <div id="subject-selection" class="flex flex-wrap justify-center gap-3 sm:gap-4">
+            <button data-subject="html" class="subject-btn px-5 py-2 text-base font-semibold text-white bg-indigo-600 rounded-full shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-200 ease-in-out transform hover:scale-105">HTML</button>
+            <button data-subject="css" class="subject-btn px-5 py-2 text-base font-semibold text-white bg-indigo-600 rounded-full shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-200 ease-in-out transform hover:scale-105">CSS</button>
+            <button data-subject="js" class="subject-btn px-5 py-2 text-base font-semibold text-white bg-indigo-600 rounded-full shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-200 ease-in-out transform hover:scale-105">JavaScript</button>
+        </div>
+
+        <div class="flashcard-container w-full max-w-lg h-64 sm:h-72">
+            <div id="flashcard" class="flashcard relative w-full h-full cursor-pointer">
+                <div class="flashcard-face flashcard-front absolute w-full h-full flex items-center justify-center text-center p-5 bg-white border-2 border-indigo-500 rounded-2xl shadow-lg">
+                    <p id="card-question" class="text-xl sm:text-2xl font-semibold text-slate-700">Select a subject to start the quiz!</p>
+                </div>
+                <div class="flashcard-face flashcard-back absolute w-full h-full flex items-center justify-center text-center p-5 bg-indigo-50 border-2 border-indigo-500 rounded-2xl shadow-lg">
+                    <p id="card-answer" class="text-lg sm:text-xl font-medium text-slate-800"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation-controls flex justify-center gap-4 w-full">
+            <button id="prev-btn" class="px-6 py-3 w-32 font-semibold text-slate-800 bg-slate-200 rounded-xl shadow-sm hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed">Previous</button>
+            <button id="next-btn" class="px-6 py-3 w-32 font-semibold text-white bg-indigo-600 rounded-xl shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed">Next</button>
+        </div>
+
+        <div class="progress-section flex flex-col items-center gap-4 w-full max-w-sm">
+            <button id="mark-known-btn" class="w-full py-3 font-semibold text-white bg-emerald-500 rounded-xl shadow-sm hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 transition-all duration-200 disabled:opacity-50 disabled:bg-slate-400">Mark as Known</button>
+            <div class="w-full bg-slate-200 rounded-full h-2.5 mt-2">
+                <div id="progress-bar-fill" class="bg-indigo-600 h-2.5 rounded-full" style="width: 0%"></div>
+            </div>
+            <p class="text-base text-slate-600">Progress: <span id="progress-text">0/0 (0 known)</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+        
