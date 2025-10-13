@@ -1,0 +1,31 @@
+/* Custom styles for the app and flashcard flip animation */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.flashcard-container {
+    perspective: 1000px;
+}
+
+.flashcard {
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.flashcard.flipped {
+    transform: rotateY(180deg);
+}
+
+.flashcard-face {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
+}
+
+.flashcard-back {
+    transform: rotateY(180deg);
+}
+
+/* Custom progress bar transition */
+#progress-bar-fill {
+    transition: width 0.5s ease-in-out;
+}
