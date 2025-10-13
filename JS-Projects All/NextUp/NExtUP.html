@@ -12,7 +12,7 @@
             justify-content: center;
             padding-top: 50px;
         }
-        
+
         /* Yeh saari classes hum JavaScript se add karenge */
         .app-container {
             width: 450px;
@@ -26,28 +26,58 @@
             text-align: center;
             color: #333;
             user-select: none;
+            font-size: 40px;
+            text-shadow: -1px -1px  #06223f;
         }
 
-        .counter-div{
+        .counter-div {
             display: flex;
             align-items: center;
             justify-content: space-between;
-        }
-        #active-task-counter{
-            color: #333;
-            font-weight: 600;
             user-select: none;
         }
-        #completed-task-counter{
-            color: #7e0808;
-            font-weight: 600;
-            user-select: none;
+
+        #active-task-counter {
+            padding: 10px 20px;
+            box-shadow: 0 5px 5px rgba(37, 27, 27, 0.1);
+
+            border: 1px solid rgb(230, 224, 224);
+
+            border-radius: 30px;
+
+            background-color: transparent;
+
+            color: #555;
+
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #completed-task-counter {
+            padding: 10px 20px;
+            box-shadow: 0 5px 5px rgba(37, 27, 27, 0.1);
+
+            border: 1px solid rgb(230, 224, 224);
+
+            border-radius: 30px;
+
+            background-color: transparent;
+
+            color: #555;
+
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
         }
 
         .input-area {
             display: flex;
             gap: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .task-input {
@@ -62,7 +92,8 @@
             outline: none;
             border-color: #007BFF;
         }
-        .task-input::placeholder{
+
+        .task-input::placeholder {
             user-select: none;
         }
 
@@ -74,6 +105,12 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            user-select: none;
+            transition: background-color o.3s ease-in-out;
+        }
+
+        .add-btn:hover {
+            background-color: #2c74c2;
         }
 
         .task-list {
@@ -115,7 +152,7 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 14px;
-            transition: background-color 0.2s ease;
+            transition: background-color 0.2s ease-in-out;
             user-select: none;
         }
 
@@ -135,14 +172,112 @@
             text-decoration: line-through;
             color: #888;
         }
-        .hidden{
+
+        .hidden {
             display: none;
         }
-        .edit-input{
-    
+
+        .edit-input {}
+
+        .filter-buttons {
+            display: flex;
+            /* gap: 10px; */
+            justify-content: space-around;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 50px;
+            margin-bottom: 5px;
+            user-select: none;
+            border: 1px solid rgb(230, 224, 224);
+            box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.1)
+                /* Bottom shadow */
+
+
         }
 
-        
+        .filter-btn {
+            padding: 10px 20px;
+            box-shadow: 0 5px 5px rgba(37, 27, 27, 0.1);
+
+            border: 1px solid rgb(230, 224, 224);
+
+            border-radius: 30px;
+
+            background-color: transparent;
+
+            color: #555;
+
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+
+        .filter-btn:hover {
+            background-color: #264472;
+            color: white;
+
+        }
+
+        .filter-btn.active {
+            background-color: #007bff;
+
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 123, 255, 0.4);
+
+        }
+
+        .clear-task-div {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+            width: 100%;
+            margin-bottom: 5px;
+            user-select: none;
+
+
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Existing common class for size, padding, etc. */
+        .clear-btn {
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease-in-out;
+            user-select: none;
+        }
+
+        /* Specific color for Clear Completed */
+        .clear-completed-btn {
+            background-color: #6c757d;
+            /* Grey Color */
+        }
+
+        .clear-completed-btn:hover {
+            background-color: #5a6268;
+        }
+
+        /* Specific color for Clear All */
+        .clear-all-btn {
+            background-color: #dc3545;
+            /* Red Color */
+        }
+
+        .clear-all-btn:hover {
+            background-color: #c82333;
+        }
     </style>
 </head>
 
@@ -151,4 +286,4 @@
 </body>
 
 </html>
-<script src="TASkS.js"></script>
+<script src="NextUp.js"></script>

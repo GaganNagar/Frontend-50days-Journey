@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Downloader</title>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  gap: 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 320px;
+}
+/* .container2 {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 320px;
+} */
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.progress-box {
+  width: 100%;
+  background: #eee;
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  background: #dcdcdc;
+  border-radius: 10px;
+  height: 25px;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #00b09b, #96c93d);
+  border-radius: 10px;
+  /* transition: width 0.3s ease; */
+}
+
+#progress-text {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+#dlt-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Downloader Progress</h1>
+
+    <div class="progress-box">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+    </div>
+
+    <p id="progress-text">0%</p>
+    <button id="download-btn">Start Download</button>
+
+  </div>
+
+  
+  <!-- <div class="container2">
+    <h1>Downloader Progress</h1>
+
+    <div class="progress-box">
+      <div class="progress-bar">
+        <div class="progress-fill" id=""></div>
+      </div>
+    </div>
+
+    <p id="progress-text">0%</p>
+    <button id="">Start Download</button>
+  </div> -->
+
+  <script src="script.js"></script>
+</body>
+</html>

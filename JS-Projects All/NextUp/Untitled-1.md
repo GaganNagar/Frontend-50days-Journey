@@ -186,7 +186,7 @@ Task 22: Task Counter Dikhana
 👀 Expected Output: App mein kahin par "Active Tasks: 3" jaisa counter dikhna chahiye, jo real-time mein update ho.
 
 Task 23: Saare Completed Tasks ko Clear Karna
-                            bv
+                            
 🎯 Goal: Ek button add karna jispar click karke saare completed tasks ek saath delete ho jaayein.
 
 📝 Logic Socho: UI mein "Clear Completed" button banao. Uske click event par, querySelectorAll ka use karke saare li elements select karo jinpar completed class lagi hui hai. Fir ek loop chala kar un sabhi elements ko ek-ek karke DOM se remove kar do.
