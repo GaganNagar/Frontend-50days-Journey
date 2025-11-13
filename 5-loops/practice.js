@@ -101,7 +101,7 @@
 // let num=123;
 // let str=num.toString()
 // let rev=""
-// for(let i=str.length-1;i>=0;i){
+// for(let i=str.length-1;i>=0;i--){
 //     rev +=str[i]
 // } 
 // console.log(Number(rev))
@@ -131,7 +131,7 @@
 // let num=121;
 // let str=num.toString()
 // let rev=""
-// for(let i=str.length-1;i>=0;i++){
+// for(let i=str.length-1;i>=0;i--){
 //     rev +=str[i]
 //     if(str===rev){
 //         console.log("palindrome");
@@ -182,7 +182,7 @@
 //     for(let j=1;j<=i;j++){
 //        str+="*"
 //     }
-//     console.log("*");
+//     console.log("");
 // }
 
 

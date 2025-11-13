@@ -29,7 +29,7 @@
 ///or Name jo h vo perameter hai
 
 
-//4... what does thee ...operator mean in perameters
+//4... what does the ...operator mean in perameters
 // function num(...val){
 //          console.log(val);
 // }
