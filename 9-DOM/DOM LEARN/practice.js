@@ -66,8 +66,8 @@ submit.addEventListener("click", function(formData){
       dltBtn.classList.add("dltBtn")
     
       const R = Math.floor(Math.random() * 256)   // red k liye
-      const G = Math.floor(Math.random() * 256)   // red k liye
-      const B = Math.floor(Math.random() * 256)   // red k liye
+      const G = Math.floor(Math.random() * 256)   // green k liye
+      const B = Math.floor(Math.random() * 256)   // blue k liye
       dltBtn.style.backgroundColor=`rgb(${R},${G},${B})` 
       container.style.backgroundColor=`rgb(${G},${B},${R})`   
 

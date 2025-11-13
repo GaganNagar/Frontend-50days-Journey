@@ -93,3 +93,19 @@
 //clone this array properly(not by reference)
 // let arr=[1, 2, 3]
 // let newArr=[...arr]
+
+
+
+// let arr = [3, 7, 1, 9, 2];
+// let max = Math.max(...arr);
+// console.log(max);
+
+
+// let arr = [1, 2, [3, 4], [5]];
+// let flatArr = arr.flat();
+// console.log(flatArr);
+
+
+// let arr = [1,2,2,3,3,4];
+// let unique = [...new Set(arr)];
+// console.log(unique);
