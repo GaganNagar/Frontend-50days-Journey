@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Random Users - Cards</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* subtle page gradient like your screenshot */
+    body { background: linear-gradient(180deg, #071028 0%, #071627 100%); }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+
+  <div class="w-full max-w-5xl px-6 py-12">
+
+    <!-- Header -->
+    <header class="mb-8 text-center">
+      <h1 class="text-2xl md:text-3xl font-semibold text-gray-100">User Cards</h1>
+      <p class="text-gray-400 mt-1">Random users from <span class="text-blue-300">randomuser.me</span></p>
+    </header>
+
+    <!-- Cards container (JS will append cards here) -->
+    <main class="flex justify-center">
+      <div class="users flex gap-6 justify-center flex-wrap">
+        <!-- JS will append each card (div.card) here -->
+      </div>
+    </main>
+
+    <!-- Refresh button centered below cards -->
+    <div class="mt-8 flex justify-center">
+      <button id="refreshBtn" 
+              class="inline-flex items-center gap-2 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md shadow-md transition">
+        <!-- icon (simple) --> 🔄
+        Refresh
+      </button>
+    </div>
+
+    <!-- small footer -->
+    <footer class="mt-8 text-center text-sm text-gray-500">
+      Tip: Cards are responsive — they line up in a row on wide screens and wrap on smaller screens.
+    </footer>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
