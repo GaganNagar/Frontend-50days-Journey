@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debounce demo</title>
+    <style>
+      body { font-family: system-ui, Arial; padding: 2rem; }
+      label, p { margin: .5rem 0; }
+      input { padding: .5rem; width: 300px; }
+      .box { margin-top: 1rem; padding: .75rem; border: 1px solid #ddd; border-radius: 6px; width: fit-content; }
+      .muted { color: #666; font-size: .9rem; }
+      .btn{
+        border: none;
+        background-color: rgb(165, 6, 6);
+        border-radius: 10%;
+        text-align: center;
+        padding: 5px;
+        color: #ddd;
+        width: 50px;
+      }
+    </style>
+</head>
+<body>
+  <h2>Debounce input demo</h2>
+
+  <label>
+    Search:
+    <input id="search" type="text" placeholder="Type and pause..." autocomplete="off" />
+  </label>
+
+  <button class="btn">Click</button>
+
+
+
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
